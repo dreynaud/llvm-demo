@@ -83,7 +83,7 @@ LLVM (http://llvm.org/):
 
 ## Demo time
 * [hello-c](hello-c)
-* fizzbuzz
+* [fizzbuzz](fizzbuzz)
 
 ## Further Reading
 http://www.aosabook.org/en/llvm.html
