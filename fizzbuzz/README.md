@@ -1,3 +1,4 @@
+```bash
 # inspect bitcode
 clang -c -emit-llvm fizzbuzz.c -o fizzbuzz.bc
 llvm-dis fizzbuzz.bc -o fizzbuzz.ll
@@ -24,3 +25,4 @@ opendiff fizzbuzz-mem2reg.ll fizzbuzz-O3.ll
 # take a look at the passes that ran and the available passes
 opt -S -O3 -time-passes fizzbuzz-named.ll > fizzbuzz-O3.ll
 opt -help
+```

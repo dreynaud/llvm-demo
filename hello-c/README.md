@@ -1,3 +1,4 @@
+```bash
 # install llvm (plus optionally put in PATH)
 # alternatively could use the LLVM that ships with Xcode
 brew install llvm
@@ -40,3 +41,4 @@ as hello-42ed.s -o hello-42ed.o
 ld -lSystem -macosx_version_min 10.12 hello-42ed.o -o hello-42ed
 ./hello-42ed
 echo $?
+```
