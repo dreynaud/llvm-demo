@@ -82,7 +82,7 @@ LLVM (http://llvm.org/):
   * explicit def-use chains
 
 ## Demo time
-* hello-c
+* [hello-c](hello-c)
 * fizzbuzz
 
 ## Further Reading
