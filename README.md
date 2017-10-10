@@ -7,23 +7,23 @@ An open-source modular compiler framework
 It used to stand for "Low-Level Virtual Machine", but the acronym has grown increasingly inaccurate and now it's officially not an acronym anymore.
 
 ## A bit of history
-* 2000 started as a research project at the University of Illinois by Chris Lattner
+* 2000 started as a research project at the University of Illinois by [Chris Lattner](http://nondot.org/sabre/)
 * 2005 Chris hired by Apple to keep working on LLVM
-* 2011 LLVM becomes the default compiler in Xcode (used to be GCC)
-* 2015 LLVM becomes the only compiler in Xcode
+* 2011 LLVM becomes the [default compiler in Xcode](https://en.wikipedia.org/wiki/Xcode#4.x_series) (used to be GCC)
+* 2015 LLVM becomes the [only compiler in Xcode](https://en.wikipedia.org/wiki/Xcode#5.x_series)
 
 ## What's the point?
 * for Apple:
   * better IDE integration (auto-completion, compilation warnings, static code analysis)
   * faster compilation times than GCC
   * first amd64 compiler in the world (for iPhone 5S and up)
-  * support for cool new language and runtime features like Automatic Reference Counting and Objective-C blocks
-  * Swift!
+  * support for cool new language and runtime features like [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html) and Objective-C blocks
+  * [Swift](https://developer.apple.com/swift/)!
 * for Google:
-  * custom compilation warnings and automatic refactoring on a large codebase
-  * TSan: data race detection for C/C++
-  * ASan: memory error detection
-  * Native Client (now deprecated in favor of WebAssembly)
+  * [custom compilation warnings](http://blog.llvm.org/2011/05/c-at-google-here-be-dragons.html) and automatic refactoring on a large codebase
+  * [TSan](https://github.com/google/sanitizers/wiki/ThreadSanitizerCppManual): data race detection for C/C++
+  * [ASan](https://github.com/google/sanitizers/wiki/AddressSanitizer): memory error detection
+  * [Native Client](https://developer.chrome.com/native-client) (now deprecated in favor of WebAssembly)
 * for students and researchers:
   * the framework makes it very easy to write a specific analysis/optimization and run it on real programs
 
@@ -73,7 +73,7 @@ LLVM (http://llvm.org/):
     xcore      - XCore
 ```
   * modular mid-level optimizations
-* enabling technology: the LLVM IR (bitcode)
+* enabling technology: the [LLVM IR](https://llvm.org/docs/LangRef.html) (bitcode)
   * similar in principle to something like JVM bytecode
   * enables analysis and implementation passes to be language and target-agnostic
   * type-safe
@@ -86,4 +86,4 @@ LLVM (http://llvm.org/):
 * [fizzbuzz](fizzbuzz)
 
 ## Further Reading
-http://www.aosabook.org/en/llvm.html
+[The Architecture of Open Source Applications - LLVM](http://www.aosabook.org/en/llvm.html)
